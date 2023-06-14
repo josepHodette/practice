@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+/* 
+    기본선택자              설명
+    전체선택자      *       html 문서 안에 있는 태그를 모두 선택
+    태그 선택자     태그    html 문서 내부의 특정 태그를 모두 선택 
+    아이디선택자    #아이디 특정 id 속성이 있는 태그 선택자, 웹 표준 id
+                            속성은 웹페이지 내부에서 중복되면 안된다.
+
+    클래스선택자    .클래스  특정클래스가 있는 태그 선택
+    자손선택자      선택자A선택자B   선택자 A의 후손인 선택자B 선택
+    자식선택자      선택자A>선택자B  선택자 A의 자식인 선택자B 선택
+    반응선택자      :active          사용자가 마우스로 클릭한 태그선택
+                    :hover           사용자가 마우스커서를 올린 태그 선택
+    구조선택자      :first-child     형제 관계에서 첫번째로 등장하는 태그 선택
+                    :last-child      형제 관계에서 마지막으로 등장하는태그 선택
+                    :nth-child(수열) 형제관계에서 앞에서 수열 번째로 등장하는 태그 선택
+                    :nth-last-child  형제관계에서 뒤에서 수열번째로 등장하는 태그 선택
+
+
+
+*/
+/* 전체선택자는 초기화 작업시 많이 이용 */
+/* *{
+    border :1px solid red;
+} */
+
+/* 태그선택자 */
+/* h1{
+    border: 1px solid red;
+}
+h2{
+    border: 1px solid green;
+}
+h3{
+    border: 1px solid blue;
+} */
+
+/* 자손 선택자 */
+/* p strong {
+    border: 1px solid blue;
+} */
+
+/* 자식선택자 */
+/* ul > li{
+    border: 1px solid blue;
+} */
+
+/* 그룹선택자 */
+/* h1, h2, h3{
+    border: 1px solid blue;
+} */
+
+/* 구조선택자 */
+/* ul li{
+    list-style: none;
+    float: left;
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid red;
+    background-color: yellow;
+}
+
+li:first-child{
+    border-radius: 10px 0 0 10px;
+}
+
+li:last-child{
+    border-radius: 0 10px 10px 0;
+}
+
+li:nth-child(2n){
+    background-color: pink;
+}
+li:nth-child(2n-1){
+    background-color: orange;
+} */
+
+/* 순서선택자
+ul li:nth-of-type(1){
+    border: 1px solid red;
+}
+ul li:nth-of-type(2){
+    border: 1px solid green;
+}
+ul li:nth-of-type(3){
+    border: 1px solid blue;
+}
+ul li:nth-of-type(4){
+    border: 1px solid violet;
+} */
+
+/* 수열 순서선택자 */
+/* ul li:nth-of-type(2n){
+    border: 1px solid blue;
+}
+ul li:nth-of-type(2n-1){
+    border: 1px solid red;
+} */
+
+/* W짝수 홀수 */
+/* ul li:nth-of-type(even){
+    border: 1px solid blue;
+}
+ul li:nth-of-type(odd){
+    border: 1px solid red;
+} */
+/* 반응선택자 */
+/* h1{
+    cursor: pointer;
+}
+h1:hover{
+    color: red;
+}
+h1:active{
+    color:blue
+} */
+/* 속성선택자 */
+/* input[type="text"]:hover{
+    border: 1px solid blue;
+}
+input[type="password"]{
+    border: 2px solid red;
+} */
+
+/* 클래스선택자 */
+/* p.text1{
+    border: 3cqmax solid blue;
+}
+p.text2{
+    border: 1px solid red;
+} */
+
+/* 아이디선택자 */
+/* #header{
+    border: 1px solid red;
+}
+#section{
+    border: 1px solid green;
+}
+#footer{
+    border: 1px solid violet;
+} */
+h1{
+    cursor: pointer;
+    border: 2px solid blue;
+}
+h1:hover{
+    border: 2px solid red;
+}
+h1:before{
+    content: "before content";
+    color: blue;
+}
+h1:after{
+    content: "after content";
+    color: red;
+
+}
