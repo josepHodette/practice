@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+/* 
+폰트색상
+color       영문법      폰트 색상 영문법
+            RGB(1,0,0)  폰트 RGB 표기
+            #000000     폰트색상 16진수         
+*/
+
+
+/* ul li{
+    list-style: none;
+    font-size: 30px;
+} */
+/* 영문법 */
+/* li:nth-of-type(1){
+    color: red;
+} */
+/* 16진수 표기법 */
+/* li:nth-of-type(2){
+    color: #6dba47;
+} */
+/*  RGB 표기법 */
+/* li:nth-of-type(3){
+    color: rgb(39,32,225);
+} */
+/*  RGB 표기법 알파 뒤에 알파값줘서 불투명도*/
+/* li:nth-of-type(4){
+    color: rgba(39,32,225,0.8);
+} */
+/* 텍스트 줄간격 
+    line-height     실수값      실수배율
+                    픽셀값      px단위
+
+*/
+.text1{
+    font-size: 20px;
+    line-height: 40px;
+    border: 1px solid red;
+}
+.text2{
+    font-size: 20px;
+    line-height: 1.5;
+    /* 글자크기의 배율로 높이를 줌 */
+    border: 1px solid blue;
+}
+/* 
+ 텍스트 정렬
+text-align      left           왼쪽
+                center          가운데정렬
+                right           오른쪽 정렬
+                justify         양쪽정렬
+*/
+p {
+    border: 1px solid blue;
+}
+.txt1{
+    text-align: left;
+}
+.txt2{
+    text-align: center;
+}
+.txt3{
+    text-align: right;
+}
+.txt4{
+    text-align: justify;
+}
+/* 텍스트자간
+letter-spacing  픽셀  글자간격 */
+ ul li{
+    list-style: none;
+    font-size: 20px;
+ }
+li:nth-of-type(1){
+    letter-spacing: 0px;
+}
+li:nth-of-type(2){
+    letter-spacing: 4px;
+}
+li:nth-of-type(3){
+    letter-spacing: -4px;
+}

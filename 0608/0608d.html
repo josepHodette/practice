@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html 기본문법</title>
+</head>
+<body bgcolor="yellow">
+    <!-- 
+        테이블태그(표)
+        table  표삽입
+        th      표의 제목
+        tr      표의 행삽입
+        td      표의 일반요소 생성
+
+     -->
+     <center>
+        <table border="1" width="640px">
+            <tr>
+                <th>춘천</th>
+                <th>원주</th>
+                <th>강릉</th>
+            </tr>
+            <tr align="center">
+                <td>200</td>
+                <td>300</td>
+                <td>400</td>
+            </tr>
+            <tr align="right">
+                <td>닭갈비</td>
+                <td>비빔밥</td>
+                <td>회센터</td>
+            </tr>
+        </table>
+     </center>
+
+     <hr>
+     <br>
+     <center>
+        <table border="3px", width="640px" height="200px">
+            <tr>
+                <!-- th를 하나주고 시작하면 빈공간 시작 가능 -->
+                <th></th> 
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+            </tr>
+            <tr align="center">
+                <th>1교시</th>
+                <td>영어</td>
+                <td>국어</td>
+                <td>과학</td>
+                <td>미술</td>
+                <td>기술</td>
+            </tr>
+            <tr align="center">
+                <th>2교시</th>
+                <td>도덕</td>
+                <td>체육</td>
+                <td>영어</td>
+                <td>수학</td>
+                <td>사회</td>
+            </tr>
+            <tr align="center">
+                <th>3교시</th>
+                <td>수학</td>
+                <td>사회</td>
+                <td>미술</td>
+                <td>영어</td>
+                <td>국어</td>
+            </tr>
+            <tr align="center">
+                <th>4교시</th>
+                <td>미술</td>
+                <td>과학</td>
+                <td>지리</td>
+                <td>보건</td>
+                <td>영어</td>
+            </tr>
+
+        </table>
+     </center>
+     <!-- colspan : 셀의 너비(열) 합치기
+        rowspan : 셀의 높이(행) 합치기
+    -->
+<br>
+<hr>
+<center>
+    <table border="1" width="640px" height="300px">
+        <tr>
+            <th colspan="2">지역별 홍차</th>
+        </tr>
+        <tr align="center">
+            <th rowspan="3">중국</th>
+            <td>정산소종</td>
+        </tr>
+        <tr align="center">
+            <td>기문</td>
+        </tr>
+        <tr align="center">
+            <td>운남</td>
+        </tr>
+        <tr align="center">
+            <th rowspan="4">인도 및 스리랑카</th>
+            <td>아삼</td>
+        </tr>
+        <tr align="center">
+            <td>실론</td>
+        </tr>
+        <tr align="center">
+            <td>다질링</td>
+        </tr>
+        <tr align="center">
+            <td>닐가리</td>
+        </tr>
+   
+    
+    </table>
+</center>
+
+<!-- 테이블문제 -->
+<hr>
+<table border="1px" width="640px" height="300px" align="center">
+    <tr>
+        <th colspan="5" >
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            춘천소개  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            사진모음  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            오시는길  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            회원가입  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </th>
+    </tr>
+    <tr>
+        <th colspan="5">
+            사진모음
+        </th>
+    </tr>
+    <tr align="center">
+        <th>이미지</th>
+        <th>이미지</th>
+        <th>이미지</th>
+        <th>이미지</th>
+        <th>이미지</th>
+    </tr>
+    <tr align="center">   
+        <th>그림1</th>
+        <th>그림2</th>
+        <th>그림3</th>
+        <th>그림4</th>
+        <th>그림5</th>
+    </tr>
+    <tr align="center">
+        <th>이미지</th>
+        <th>이미지</th>
+        <th>이미지</th>
+        <th>이미지</th>
+        <th>이미지</th>
+    </tr>
+    <tr align="center">
+        <th>그림1</th>
+        <th>그림2</th>
+        <th>그림3</th>
+        <th>그림4</th>
+        <th>그림5</th>
+    </tr>
+    <tr>
+        <td colspan="5" align="center">
+            춘천직업전문학교
+        </td>
+    </tr>
+</table>
+</body>
+</html>
