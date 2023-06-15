@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력양식폼</title>
+</head>
+<body>
+    <!-- 
+        전송방식                설명   
+        get                     주소에 데이터를 직접 입력해 전달
+                                (보안이 취약 : 주소 내용이 보인다.)
+        post                    별도의 방법을 사용해 데이터를 해당 주소로 전달
+                                (대부분 post 방식 사용 : 보안이 우수)
+     -->
+    <form action="0612d.html" method="get">
+        <!-- method를 get으로 주면 경로 마지막에 물음표가 표시됨 -->
+        <table border="1">
+            <tr>
+                <td><label for="username">이름</label></td>
+                <td><input type="text" id="username"></td>
+            </tr>
+            <tr>
+                <td>성별</td>
+                <td><input type="radio", name="성별" id="man">
+                    <!-- name을 동일하게 설정해줘야 하나씩 선택 가능하다. -->
+                <label for="man">남자</label>
+                <!-- input에 id/라벨에 for를 설정해주면 글자를 선택해도 체크됨 -->
+                <input type="radio" name="성별" id="woman">
+                <label for="woman">여자</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    선택
+                </td>
+                <td>
+                    <select>
+                    <optgroup label="HTML5">
+                        <option >Multimedia</option>
+                        <option >Connectivity</option>
+                        <option >Device Access</option>
+                    </optgroup>
+                    <optgroup label="CSS3">
+                        <option >Animation</option>
+                        <option >3D transform</option>
+                        <option >Access</option>
+                    </optgroup>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td>선택</td>
+                <td>
+                    <select>
+                        <option>김밥</option>
+                        <option>떡볶이</option>
+                        <option>순대</option>
+                        <option>어묵</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="reset" value="초기화">
+        
+                </td>
+                <td>
+                    <input type="submit" value="가입">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+</html>
