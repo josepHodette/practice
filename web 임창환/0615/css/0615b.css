@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/* 
+웹폰트 어썸 아이콘 적용
+https://fontawesome.com/
+id lyricqwe naver
+*/
+/* 웹폰트 아이콘 */
+.fa-android{
+    font-size: 100px;
+}
+
+ul li{
+    list-style: none;
+    float: left;
+    margin: 20px;
+}
+
+ul li .fab{
+    font-size: 50px;
+    color: paleturquoise;
+}
