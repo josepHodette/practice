@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+/* 초기화 작업 */
+
+*{
+ list-style: none;
+}
+
+/* 전체영역 설정 */
+body{
+    width: 1200px;
+    font-size: 20px;
+    margin: 0px auto;
+}
+/* header */
+header{
+    width: 1200px;
+    height: 100px;
+    background: rgb(184, 32, 115);
+}
+/* 헤더 세부영역 */
+.top{
+    float: left;
+    height: 100px;
+    width: 1200px;
+}
+.logo{
+    float: left;
+    height: 100px;
+    width: 200px;
+    background: #EEE;
+}
+.chicken{
+    float: left;
+    height: 100px;
+    width: 360px;
+}
+/* 메뉴자리 */
+nav{
+    float: right;
+}
+.menu{
+    float: right;
+    width: 600px;
+    background: #EEE;
+}
+.menu li{
+    float: left;
+    width: 200px;
+}
+
+/* 이미지 슬라이드 영역 */
+.imgslide{
+    float: left;
+    width: 1200px;
+    height: 350px;
+    background: #00FFFF;
+}
+/* 공지사항/갤러리 컨텐츠영역 */
+.contents{
+    float: left;
+    width: 1200px;
+    height: 200px;
+    background: #FF0000;
+}
+/* 공지사항 영역 */
+.notice{
+    float: left;
+    width: 400px;
+    height: 200px;
+    background: green;
+}
+/* 갤러리영역 */
+.gallery{
+    float: left;
+    width: 400px;
+    height: 200px;
+    background: orange;
+}
+/* 콘텐츠영역 */
+.shortcut{
+    float: left;
+    width: 400px;
+    height: 200px;
+    background: blue;
+}
+/* footer */
+footer{
+float: left;
+height: 120px;
+width: 1200px;
+background: aqua;
+}
+.copy{
+    float: left;
+    width: 800px;
+    height: 120px;  
+    background: beige;
+    
+}
+.site{
+float: right;
+width: 400px;
+height: 120px;
+background: brown;
+}
+.site ul{
+    float: left;
+    width:400px;
+
+}
+.site >ul > li{
+    float: left;
+    width: 400px;
+    height: 60px;
+}
