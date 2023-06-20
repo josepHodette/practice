@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* 배경꾸미기 */
+/* 배경색 지정
+background      영문법  배경색 영어 색상
+                rgb     배경색 rgb표기법 지정
+                #------ 16진수표기법으로 지정
+*/
+*{
+    list-style-type: none;
+    margin: 0 0 0 0;
+}
+li{color: #000;
+    
+    }
+li:nth-of-type(1){background-color: #000;}
+li:nth-of-type(2){background-color: #111;}
+li:nth-of-type(3){background-color: #222;}
+li:nth-of-type(4){background-color: #333;}
+li:nth-of-type(5){background-color: #444;}
+li:nth-of-type(6){background-color: #555;}
+li:nth-of-type(7){background-color: #666;}
+li:nth-of-type(8){background-color: #777;}
+li:nth-of-type(9){background-color: #888;}
+li:nth-of-type(10){background-color: #999;}
+li:nth-of-type(11){background-color: #aaa;}
+li:nth-of-type(12){background-color: #bbb;}
+li:nth-of-type(13){background-color: #ccc;}
+li:nth-of-type(14){background-color: #ddd;}
+li:nth-of-type(15){background-color: #eee;}
+li:nth-of-type(16){background-color: #fff;}
+/* 배경 이미지 삽임
+background-image    url     배경이미지 삽입
+background-repeat   repeat  배경이미지 반복
+                    repeat-x x축으로 반복
+                    repeat-y y 축으로 반복
+                    no-repeat 반복 없음
+background--position 가로축, 세로축 배경 이미지 위치 지정
+background-size     contatin, cover 배경 이미지 크기 지정
+background-attachment   fixed   배경 이미지 고정
+
+*/
+section{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+    margin: 0 auto;
+    background-image: url(../img/pattern.png);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-position: center center;
+                         /* 가로축 세로축 */
+    background-position: right bottom;
+    background-position: 20px 60px;
+                        /* 가로축 세로축 */
+}
+/* body{
+    background-image: url(../img/rose.jpg);
+} */
+div{
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    background-image: url(../img/rose.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    /* 원래 이미지 비율을 유지하면서 영역안을 전체이미지로 가득채움 */
+    background-size: cover;
+    /* 배경이 조금 잘리더라도 영역을 가득 채움 */
+    
+}

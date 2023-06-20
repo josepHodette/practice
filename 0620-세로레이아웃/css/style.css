@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* 초기화 작업 */
+*{
+    list-style: none;
+    }
+a{
+    text-decoration: none;
+}
+/* 전체영역 설정 */
+body{
+    width: 1200px;
+    font-size: 20px;
+    font-family: '굴림';
+    font-weight: normal;
+    margin: 0 auto;  
+    /* 가운데정렬 */
+     }
+/* header 영역 설정*/
+header{
+    float: left;
+    width: 200px;
+    height: 670px;
+    background-color: aqua;
+}
+.top{
+    float: left;
+    width: 200px;
+    height: 600px;
+    background-color: blue;
+}
+.logo{
+    float: left;
+    width: 200px;
+    height: 100px;
+    background-color: pink;
+}
+.logo img{
+    width: 200px;
+    height: 100px;
+}
+nav{
+    float: right;
+    width: 100px;
+    height: 500px;
+    background-color: silver;
+}
+/* 이미지 영역 설정 */
+.imgslide{
+    float: left;
+    width: 1000px;
+    height: 350px;
+    background: red;
+}
+.imgslide img{
+    width: 1000px;
+    height: 350px;
+}
+/* 공지사항 갤러리 콘텐츠 영역 설정 */
+.contents{
+    float: left;
+    width: 1000px;
+    height: 200px;
+    background: yellow;
+}
+.notice{
+    float: left;
+    width: 300px;
+    height: 200px;
+    background: tomato;
+}
+.gallery{
+    float: left;
+    width: 300px;
+    height: 200px;
+    background: slateblue;
+}
+.shortcut{
+    float: left;
+    width: 400px;
+    height: 200px;
+    background: tan;
+}
+/* copyright 자리 */
+footer{
+    float: left;
+    width: 1000px;
+    height: 120px;
+    background-color: orange;
+}
+.copy{
+    float: left;
+    width: 600px;
+    height: 120px;
+    background: beige;
+}
+.site{
+    float: right;
+    width: 400px;
+    height: 120px;
+    background: violet;
+}
+.site ul{
+    float: left;
+    width: 400px;
+}
+.site ul li{
+    float: left;
+    width: 400px;
+    height: 60px;
+}
