@@ -1,0 +1,22 @@
+@charset "utf-8"; 
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* 주제 */
+body{
+    background-color: red;
+}
+#contatiner{
+    width: 500px;
+    height: 250px;
+    background-color: orange;
+    border: 2px solid yellow;
+    /* 위치설정 */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* absolute는 시작꼭지점을 절대좌표로 이동시키기 때문에 마진을 조절하여서 정렬한다. */
+    margin-left: -250px;
+    margin-top: -125px;
+}
