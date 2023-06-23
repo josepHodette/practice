@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+/* 
+box shadow , text-shadow
+- 요소의 그림자 만드는 태그
+box-shadow  가로축/세로축/퍼짐정도/색상-블록요소의 그림자를 만든다
+text-shadow 가로축/세로축/퍼짐정도/색상-텍스트의 그림자를 만듭니다.
+*/
+/* 자식요소의 float 속성이 이후에 영향 안가게해제 */
+.aa::after{
+    content: '';
+    display: block;
+    clear: both;
+
+}
+.box1{
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+    margin: 100px;
+    float: left;
+    box-shadow: 10px 10px 30px black;
+}
+.box2{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    margin: 100px;
+    float: left;
+    box-shadow: -20px -20px 0px pink;
+}
+p{
+    font-weight: bold;
+    font-size: 100px;
+    font-family: "arial";
+    color: #111;
+    margin: 100px;
+    text-shadow: 30px 30px 10px #aaa;
+}
+/* border-radius 속성 px, % = 모서리의 속성값 만큼 둥글게 만든다 */
+.box3{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    margin: 100px;
+    float: left;
+    border-radius: 30px;
+}
+.box4{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin: 100px;
+    float: left;
+    border-radius: 50%;
+}
+.bb::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+ /* linear-gradient, radial-gradient-그레이디언트적용  */
+ /* 
+ gradient   linear-gradient(방향,색상1,색상2)   직선모양
+            radial-gradient(색상1,색상2)    타원모양의 그라디언트
+ */
+ .dd{
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 50px;
+    border: 1px solid black;
+ }
+ .dd:nth-of-type(1){
+    background: linear-gradient(to bottom, blue, red);
+ }
+ .dd:nth-of-type(2){
+    background: linear-gradient(to top, blue, red);
+ }
+ .dd:nth-of-type(3){
+    background: linear-gradient(to right, blue, red);
+ }
+ .dd:nth-of-type(4){
+    background: linear-gradient(to left, blue, red, magenta, gray);
+ }
+ .dd:nth-of-type(5){
+    background: linear-gradient(45deg, blue, red, yellow);
+ }
+ .dd:nth-of-type(6){
+    background: radial-gradient(blue, red);
+ }
+ body{
+    background: linear-gradient(135deg, yellow, white);
+ }
+ .cc::after{
+    content: '';
+    display: block;
+    clear: both;
+ }
+ /* filter- 특수효과 사용하기 */
+ /* filter
+ blur   흐림효과 조절
+ brightness 밝기 조절
+ contrast   명도대비 조절
+ grayscale  흑백을 지정
+ hue-rotate 요소의 색상 단계를 조절
+ invert 요소의 색상 반전단계를 조절
+ saturate   요소의 채도를 조절
+ sepia  요소의 갈색 톤 단계를 조절
+ */
+ .ee{
+    width: 650px;
+    margin: 100px auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+ }
+.ee img{
+    width: 200px;
+    margin: 6px;
+}
+.ee img:nth-of-type(2){
+    filter: blur(3px);
+}
+.ee img:nth-of-type(3){
+    filter: brightness(0.5);
+}
+.ee img:nth-of-type(4){
+    filter: contrast(150%);
+}
+.ee img:nth-of-type(5){
+    filter: grayscale(100%);
+}
+.ee img:nth-of-type(6){
+    filter: hue-rotate(180deg);
+}
+.ee img:nth-of-type(7){
+    filter: invert(100%);
+}
+.ee img:nth-of-type(8){
+    filter: saturate(0.5);
+}
+.ee img:nth-of-type(9){
+    filter: sepia(100%);
+}
+.ee::after{
+    content: '';
+    display: block;
+    clear: both;
+}
