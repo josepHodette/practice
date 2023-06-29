@@ -1,0 +1,172 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Freehand&display=swap');
+
+
+/* 
+vw(viewport width) : 화면의 넓이값을 100등분한 단위
+vh(viewport height) : 화면의 높이값을 100등분한 단위
+vmax(viewport maximum):화면에서 긴축을 100등분한 단위 , 데스크탑에서만 반응형 크기를 적용하고 싶을 때 
+vmin(viewport minimum):화면에서 짧은 축을 100등분한 단위, 모바일 기기에서만 반응형 크기를 적용하고 싶을 때
+object-fit:cover-콘텐츠가 잘리더라도 꽉 채움-많이 사용됨
+object-fit:contatin- 콘텐츠 여백이 생기더라도 잘리지 않게 꽉채움
+
+video 태그 :controls- 재생바 생성/ muted-강제음소거/autoplay-자동재생/loop-무한반복
+
+
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* header부분 영역 설정 */
+ header{
+    width: 100%;
+    height: 10vh;
+    border-bottom: 1px solid #fff ;
+    position: absolute;
+    top: 0px;
+    left: 100px;
+    z-index: 100;
+ }
+header a h1{
+    font: 30px/1;
+    font-family: 'Freehand';
+    color: skyblue;
+    position: absolute;
+    left: 6vw;
+    top: 50%;
+    margin-top: -10px;
+}
+header #gnb{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -8px;
+    margin-left: -280px;
+    
+}
+header #gnb li{
+    float: left;
+    margin: 0px 10px;
+    padding: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-radius: 50%;
+}
+header #gnb li a{
+    font: bold 18px/1 "Architects Daughter";
+    letter-spacing: 2px;
+    opacity: 0.3;
+    filter: saturate(0.5);
+}
+header #gnb li a.on{
+    opacity: 1;
+    filter: saturate(1);
+}
+header #gnb li:nth-of-type(1){
+    background-color: palegreen;
+    
+}
+header #gnb li:nth-of-type(2){
+    background-color: plum ;
+}
+header #gnb li:nth-of-type(3){
+    background-color: goldenrod;
+}
+header #gnb li:nth-of-type(4){
+    background-color: paleturquoise;
+}
+header #gnb li:nth-of-type(5){
+    background-color: red;
+}
+header #gnb li:nth-of-type(6){
+    background-color: yellow;
+}
+header #gnb li:hover{
+    transform: scale(1.4, 1.4);
+}
+header .sns{
+    position: absolute;
+    top: 50%;
+    right: 6vw;
+    margin-top: -8px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+header .sns li:hover{
+    transform: scale(2, 2);
+}
+header .sns li{
+    float: left;
+    margin: 0px 10px;
+}
+header .sns li a{
+    font-size: 20px;
+    color: skyblue;
+}
+figure{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+figure video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+figure .txt{
+    position: absolute;
+    left: 6vw;
+    top: 50%;
+}
+figure .txt p{
+    font: bold 8vw/1 "Freehand";
+    color: #bf71f3;
+    margin-top: -30vh;
+    margin-bottom: 60px;
+}
+figure .txt .korean{
+    font: bold 8vw/1 "바탕";
+    color: #bf71f3;
+    margin-top: -30vh;
+    margin-bottom: 60px;
+}
+figure .txt ul li{
+    float: left;
+    margin-right: 30px;
+
+}
+figure .txt ul li i{
+    font-size: 20px;
+    color: palevioletred;
+    margin-right: 20px;
+}
+figure .txt ul li strong{
+    font: 14px/1 "Freehand";
+    color: #da4a99;
+    letter-spacing: 2px;
+}
+footer{
+    position: absolute;
+    bottom: 5vh;
+    left: 50%;
+    z-index: 100;
+    font: 14px/1;
+    font-family: 'Architects Daughter';
+    color: violet;
+    letter-spacing: 2px;
+    transform: translateX(-50%);
+}
