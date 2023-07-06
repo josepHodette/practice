@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* flex 기본문법 
+display flex        자신의 블록 속성을 유지하면서 자식요소에 flex환경 설정]
+        inline-flex 자신을 인라인 속성으로 변경하면서 자식요소에 flex환경설정
+
+flex-direction  row             flex 기본 축을 가로로 지정(기본설정값)
+                column          flex 기본축을 세로로 지정
+                row-reverse     자식요소 콘텐츠를 가로역순으로 정렬
+                columen-reverse 자식요소 콘텐츠를 세로역순으로 정렬
+
+flex-wrap   nowrap  자식요소의 줄 바꿈을 하지 않음
+            wrap    자식요소의 줄바꿈을 함
+
+flex-flow   row-wrap    flex-direction과flex-wrap 속성의 축약문
+
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    background: lightcyan;
+}
+section{
+    width: 100%;
+    border: 10px solid blue;
+    /* display: flex; */
+    /* display: inline-flex;
+    flex-direction: column; */
+    box-sizing: border-box;
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
+}
+section article{
+    width: 100px;
+    height: 100px;
+    background: aqua;
+    border: 1px solid #000;
+}   
