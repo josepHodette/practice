@@ -1,0 +1,71 @@
+@charset "utf-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ul, ol, li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* p{
+    font-size: 30px;
+    margin: 20px;
+} */
+/* body{
+    height: 3000px;
+
+}
+p{
+    font-size: 30px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+} */
+
+/* div{
+    width: 200px;
+    height: 200px;
+    background: blue;
+    margin-top: 300px;
+} */
+
+/* .box{
+    width: 800px;
+}
+.box video{
+    width: 100%;
+}
+.btnSet li{
+    float: left;
+    margin: 20px 20px;
+    font: bold 18px/2 arial;
+    cursor: pointer;
+} */
+
+/* new Date()
+p{
+    font-size: 30px;
+    margin: 20px;
+} */
+
+/* setInterval() */
+p{
+    font: bold 100px arial;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* mousewheel.js */
+/* div{
+    width: 600px;
+    height: 400px;
+    background: #888;
+    margin: 50px auto;
+}
+p{
+    font-size: 40px;
+    color: #fff;
+} */

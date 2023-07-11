@@ -1,0 +1,78 @@
+@charset "utf-8";
+*{
+    margin: 0px auto;
+    padding: 0px;
+    font-family: "맑은 고딕";
+    color: #333;
+}
+ul, ol, li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+body{
+    width: 1200px;
+    background-color: #fff;
+    font-size: 20px;
+    border: 1px solid blue;
+}
+
+header{
+    width: 1200px;
+    height: 100px;
+    background-color: yellow;
+}
+.logo{
+    float: left;
+    width: 250px;
+    height: 100px;
+    background: aqua;
+}
+.menu{
+    float: right;
+    width: 800px;
+    height: 100px;
+    background: pink;
+}
+.navi{
+    float: right;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+
+.navi > li{
+    float: left;
+}
+.navi > li > a{
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #0006ad;
+    color: #fff;
+}
+.navi > li > a:hover{
+    background-color: #30a3f3;
+}
+.submenu{
+    position: absolute;
+    width: 180px;
+    display: none;
+}
+.submenu> li>a{
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #ababab;
+    color: #fff;
+}
+.submenu> li>a:hover{
+    background-color: #30a3f3;
+}
+
