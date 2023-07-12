@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블로그제작</title>
+    <!-- jquery 연결 script:src -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+  
+    <!-- jquery library 설정
+    https://code.jquery.com 에서 코드 복사 후 연결 -->
+    <script src="js/jquery.bxslider.js"></script> 
+    <!-- boxslider 플러그인을 실행하기 위한 스타일 파일 링크 -->
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/owl.autoplay.js"></script>
+    <script src="js/owl.navigation.js"></script>
+    <script src="js/main.js"></script>
+    <!-- owl 캐러셀 플러그인을 실행하기 위한 스타일 파일 링크 -->
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <!-- owl 캐러셀 네비게이션을 사용하기위한 스타일 시트 -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+    <!-- 전체를 감싸는 태그 -->
+    <div id="page-wrapper">
+        <!-- header -->
+        <header id="main-header">
+            <!-- <h1 class="master-title">2023 마임축제</h1>
+            <h2 class="master-description">춘천축제</h2> -->
+            <a href="index.html">
+                <img src="img/logo.png" width="200px" height="60px" alt="로고">
+            </a>
+            <h2 class="master-description">춘천페스티벌</h2>
+        </header>
+        <!-- 네비게이션 -->
+        <nav id="main-navigation">
+
+            <div class="pull-left">
+                <ul class="outer-menu">
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">2023 축제</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="a1.html">인사말</a></li>
+                            <li class="inner-menu-item"><a href="a2.html">마임축제</a></li>
+                            <li class="inner-menu-item"><a href="a3.html">개요</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">축제일정</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="b1.html">전체일정</a></li>
+                            <li class="inner-menu-item"><a href="b2.html">세부일정</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">축제장소</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="c1.html">오시는길</a></li>
+                            <li class="inner-menu-item"><a href="c2.html">주차안내</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="outer-menu-item">
+                        <span class="menu-title">갤러리</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="d1.html">앨범1</a></li>
+                            <li class="inner-menu-item"><a href="d2.html">앨범2</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- <li class="outer-menu-item">
+                        <span class="menu-title">갤러리</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="#">앨범1</a></li>
+                            <li class="inner-menu-item"><a href="#">앨범2</a></li>
+                        </ul>
+                    </li> -->
+
+                </ul>
+            </div>
+
+            <!-- <div class="pull-right">
+                <div class="search-bar">
+                    <form>
+                        <input type="text" class="input-search">
+                        <input type="submit" class="input-search-submit" value="검색">
+                    </form>
+                </div>
+            </div> -->
+        </nav>
+
+        <!-- 본문 -->
+        <div id="content">
+            <!-- 본문좌측영역 -->
+            <section class="section1">
+                <article>
+                    <div class="article-header1">
+                        <h1 class="article-title1">2023YEAR CHUNCHEON</h1>
+                        </div>
+                        </article>
+                <div class="main"><img src="img/spring-1.jpg" alt="사진10"></div>
+               </section>
+
+            <section class="section2">
+                <button class="hover1">올오버</button>
+                <button class="hover2">올오버</button>
+                <button class="hover3">올오버</button>
+                <button class="hover4">올오버</button>
+                <button class="hover5">올오버</button>
+                <button class="hover6">올오버</button>
+            </section>
+            <section class="section3">
+            <div id="wrapper">
+                <!-- 
+                    bxslider를 사용하기 위해서는 스크롤할 내용 전체를 감싸는 새로운 div 태그를 추가해야함.
+                 -->
+                 <div class="bxslider">
+                    <div>
+                        <img src="img/things-1.jpeg" title="슬라이드연습-1">
+                    </div>
+                    <div>
+                        <img src="img/things-2.jpeg" title="슬라이드연습-2">
+                    </div>
+                    <div>
+                        <img src="img/things-3.jpeg" title="슬라이드연습-3">
+                    </div>
+                    <div>
+                        <img src="img/things-4.jpeg" title="슬라이드연습-4">
+                    </div>
+
+            </div>
+        </section>
+        <section class="section4">
+            <div id="wrapper">
+                <!-- 캐러셀의 슬라이드 영역 -->
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="img/kitten-1.jpeg" />
+                    </div>
+                    <div class="item">
+                        <img src="img/kitten-2.jpeg" />
+                    </div>
+                    <div class="item">
+                        <img src="img/kitten-3.jpeg" />
+                    </div>
+                    <div class="item">
+                        <img src="img/puppy-1.jpeg" />
+                    </div>
+                    <div class="item">
+                        <img src="img/puppy-2.jpeg" />
+                    </div>
+                    <div class="item">
+                        <img src="img/puppy-3.jpeg" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+        <!-- footer -->
+        <footer id="main-footer">
+            강원도 춘천시 효자동 TEL:033-000-0000
+            E-mail: <a href="mailto:aaa@naver.com">admin</a>
+        </footer>
+    </div>
+</body>
+
+</html>
