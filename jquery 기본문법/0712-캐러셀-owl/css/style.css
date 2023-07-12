@@ -1,0 +1,14 @@
+@charset "utf-8";
+*{
+    margin: 0px;
+}
+ul, ol, li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* owl 캐러셀 */
+#wrapper{
+    margin: 0px auto;
+}
