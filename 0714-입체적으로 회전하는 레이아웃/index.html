@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<title> 입체적으로 웹 레이아웃 </title>
+	<script src="https://kit.fontawesome.com/fed32f677e.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+</head>
+
+<body>
+	<!-- 
+필수구문 정리
+transform(3d변형) - 콘텐츠 박스 들을 3d공간에서 입체적으로 회전
+jQuery 선택자 - jQuery 호출메뉴버튼과 카테고리 버튼을 선택
+이벤트 연결하기 - 메뉴 버튼과 카테고리 버튼에 클릭 이벤트 연결
+$(this) - 여러개의 카테고리 버튼 중 내가 클릭한 버튼 선택
+.index() - 클릭한 카테고리 버튼의 순서값 알아내기
+변수 - 버튼순서값을 저장한 뒤 필요한 곳에 넘겨줌
+.addClass()/.removeClass() - 해당콘텐츠 박스에 클래스를 동적으로 추가/제거
+.fadeIn()/fadeOut() - 콘텐츠 박스를 숨김/보이기 처리
+ -->
+	<!-- 작업순서
+1. 준비작업
+2. 기본 레이아웃 설정
+3. 메뉴 버튼 클릭 시 nav 영역과 section 영역 모션 구현
+4. section 안의 box1,2,3 안의 콘텐츠 모션 잡기
+5. 각각의 콘텐츠 채워넣기
+6. 전체 확인
+-->
+
+	<!-- 2. 레이아웃 설정 -->
+	<div class="wrap">
+		<!-- nav 영역 호출할 버튼 -->
+		<a href="#" class="btnMenu"><i class="fa-solid fa-bars"></i></a>
+		<!-- 실제 카테고리 메뉴가 들어갈 nav영역 -->
+		<nav>
+			<h1><img src="img/logo.png" /></h1>
+			<ul id="gnb">
+				<li><a href="#">Homme</a></li>
+				<li><a href="#">Girl</a></li>
+				<li><a href="#">Kids</a></li>
+				<li><a href="#">Elder</a></li>
+				<li><a href="#">Baby</a></li>
+			</ul>
+		</nav>
+
+		<!-- 3개의 콘텐츠 박스가 들어갈 section -->
+		<section>
+			<div class="box1">
+				<p><strong>Vogue Homme</strong></p>
+				<p></p>
+				<p>
+					<em><a href="#"><i class="fab fa-twitter"></i></a></em>
+					<em><a href="#"><i class="fab fa-facebook"></i></a></em>
+					<em><a href="#"><i class="fab fa-envelope"></i></a></em>
+				</p>
+				<p></p>
+				<p></p>
+				<p><span>Travis Crown</span></p>
+				<p>
+					<video src="img/vid.mp4" autoplay loop muted></video>
+				</p>
+				<p></p>
+				<p><span>Best Qualified Goods</span></p>
+				<p></p>
+				<p><span>SPORTS</span></p>
+			</div>
+
+			<div class="box2">
+				<p><span>tremendous</span></p>
+				<p></p>
+				<p><strong>Vogue Girl</strong></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p><span>Accessories</span></p>
+				<p></p>
+				<p><span>Jewelry</span></p>
+				<p></p>
+				<p></p>
+			</div>
+
+			<div class="box3">
+				<p></p>
+				<p><span>Play & Dolls</span></p>
+				<p></p>
+				<p><strong>Vogue Kids</strong></p>
+				<p></p>
+				<p><span>Clothes</span></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+			</div>
+
+			<div class="box4">
+				<p><span>Comfortable</span></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p>><strong>Vogue Elder</strong></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p><span>Hiking</span></p>
+				<p></p>
+				<p></p>
+			</div>
+
+			<div class="box5">
+				<p></p>
+				<p><span>Safety</span></p>
+				<p></p>
+				<p></p>
+				<p><strong>Vogue Baby</strong></p>
+				<p></p>
+				<p><span>meditation</span></p>
+				<p></p>
+			</div>
+		</section>
+	</div>
+</body>
+
+</html>
