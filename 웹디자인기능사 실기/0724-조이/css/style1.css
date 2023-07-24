@@ -1,0 +1,360 @@
+@charset "utf-8";
+
+*{
+    margin: 0px auto;
+    padding: 0px;
+    color: #333;
+    font-family: "맑은 고딕";
+}
+ul, ol, li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+body{
+    width: 100%;
+    height: 950px;
+}
+header{
+    width: 200px;
+    height: 850px;
+    float: left;
+}
+.top{
+    width: 200px;
+    height: 650px;
+    float: left;
+    position: relative;
+
+}
+.logo{
+    width: 200px;
+    height: 100px;
+    border-bottom: 1px dashed #333;
+}
+.menu{
+    width: 200px;
+    margin-top: 20px;
+}
+.navi>li{
+    float: left;
+    width: 180px;
+    position: relative;
+}
+.navi>li>a{
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #333;
+    text-align: center;
+}
+.navi>li>a:hover{
+    background-color: rgba(0,0,0,0.2);
+}
+#menubg{
+    width: 1014px;
+    height: 169px;
+    position: absolute;
+    left: 180px;
+    z-index: 3;
+    display: none;
+    top: 120px;
+    background: pink;
+}
+.submenu{
+      z-index: 3;
+    display: none;
+    /* padding: 6px;
+    float: left; */
+    position: absolute;
+    width: 1000px;
+    top: 0px;
+    left: 190px;
+    /* margin-top: -42px;
+    margin-left: 180px;  */
+}
+.submenu>li{
+    display: inline-block;
+
+}
+.submenu a{
+    padding: 5px;
+    width: 180px;
+    height: 20px;
+    float: left;
+    text-align: left;
+}
+.submenu a:hover{
+    background-color: rgba(0,0,0,0.2);
+    
+}
+.spotmenu{
+    float: left;
+    width: 200px;
+    height: 10px;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+}
+.spotmenu li{
+    width: 90px;
+    display: inline-block;
+    text-align: center;
+}
+.spotmenu li:hover{
+    font-weight: bold;
+}
+.spotmenu div{
+    display: inline-block;
+    width: 10px;
+}
+.bodywrap{
+    float: right;
+    width: calc(100% - 200px);
+    height: 850px;
+}
+.slideshort{
+    width: 100%;
+    height: 400px;
+}
+.shortcut{
+    /* width: 200px;
+    height: 400px; */
+    float: right;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    border: 1px solid #444;
+    z-index: 1;
+}
+.shortcut img{
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
+.shortcut a:hover{
+    opacity: 0.5;
+}
+.imgslide{
+    width: 100%;
+    height: 400px;
+    float: left;
+    position: relative;
+
+}
+.imgslide>a{
+    display: block;
+    position: absolute;
+    transition: all 3s;
+}
+.imgslide span{
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    background-color: #333;
+    opacity: 0.5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -180px;
+    margin-top: -25px;
+    border-radius: 25%;
+}
+.banner{
+    width: 100%;
+    height: 200px;
+}
+.banner>div{
+    float: left;
+}
+.banner>a>img{
+    float: left;
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 50px;
+}
+.btitle{
+    float: left;
+    width: 85%;
+    line-height: 20px;
+    margin-top: 60px;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.bimg{
+    float: right;
+    margin-top: 65px;
+    margin-right: 10px;
+}
+.banner a:hover{
+    opacity: 0.5;
+}
+.contents{
+    width: 100%;
+    height: 250px;
+}
+.tabmenu{
+    float: left;
+    width: 1000px;
+    height: 220px;
+    margin-top: 30px;
+    margin-left: 30px;
+    position: relative;
+}
+.tabmenu > li{
+    float: left;
+    width: 100px;
+    line-height: 30px;
+}
+.tabmenu > li > a{
+    font-size: 16px;
+    text-align: center;
+    background-color: #ccc;
+    border: 1px solid #ddd;  
+}
+.tabmenu > li >a:hover{
+    background-color: #eee;
+}
+.tabmenu>li.active > a{
+    background-color: #fff;
+}
+.tabmenu > li div{
+    position: absolute;
+    left: 0px;
+    height: 0px;
+    overflow: hidden;
+}
+.tabmenu > li.active div{
+    width: 1600px;
+    height: 148px;
+    border: 1px solid #ddd;
+    z-index: 1;
+}
+.notice ul{
+    float: left;
+    margin-left: 25px;
+    width: 1550px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 45px;
+}
+.notice li{
+    height: 32px;
+    line-height: 32px;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.notice li:nth-of-type(2n){
+    background: #ccc;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+.notice li span{
+    float: right;
+}
+.notice li:hover{
+    font-weight: bold;
+}
+.gallery li{
+    float: left;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.gallery img{
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.gallery li:hover{
+    opacity: 0.5;
+}
+#modal{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,0.2);
+    display: none;
+}
+#modal.active{
+    display: block;
+}
+.modal_up{
+    width: 480px;
+    height: 180px;
+    background: #fff;
+    border-radius: 10px;
+    position: absolute;
+    top: 300px;
+    left: 700px;
+
+}
+.uptitle{
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: bold;
+    margin-left: 20px;
+    line-height: 40px;
+}
+.upbody{
+    font-size: 16px;
+    text-align: center;
+    }
+.btn{   
+    margin-top: 20px;
+    width: 50px;
+    font-weight: bold;
+    margin-right: 10px;
+    text-align: center;
+    border: 1px solid #333;
+    background-color: #ddd;
+    cursor: pointer;
+}
+footer{
+    width: 100%;
+    height: 100px;
+}
+.ftlogo{
+    width: 200px;
+    height: 100px;
+    float: left;
+    position: relative;
+    top: 10px;
+    padding: 10px;
+    left: 10px;
+    border-top: 1px dashed #222;
+
+}
+.copy{
+    height: 100px;
+    float: left;
+    width: calc(100% - 500px);
+    height: 100px;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    font-size: 50px;
+    border-top: 1px dashed #222;
+}
+.sns{
+    float: right;
+    width: 300px;
+    height: 100px;
+    position: relative;
+    top: 10px;
+    border-top: 1px dashed #222;
+
+}
+.sns ul li a{
+    float: left;
+    position: relative;
+    top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
