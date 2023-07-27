@@ -1,0 +1,262 @@
+@charset "utf-8";
+*{
+    margin: 0px auto;
+    padding: 0px;
+    list-style: none;
+    color: #333;
+}
+a{
+    display: block;
+    text-decoration: none;
+}
+body{
+    width: 1000px;
+    height: 650px;
+    float: left;
+}
+header{
+    float: left;
+    width: 200px;
+    height: 650px;
+}
+.logo{
+    width: 200px;
+    height: 100px;
+    line-height: 130px;
+    
+}
+.logo img{
+    margin-left: 10px;
+}
+.menu{
+    width: 200px;
+    height: 160px;
+
+}
+.navi{
+    width: 180px;
+    margin-left: 10px;
+    margin-top: 20px;
+    background-color: antiquewhite;
+    position: relative;
+}
+.navi>li{
+    width: 180px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    border: 1px solid #333;
+}
+.navi li a:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    color: aliceblue;
+}
+.submenu{
+    width: 180px;
+    height: 300px;
+    position: absolute;
+    left: 180px;
+    top: -40px;
+    background-color: paleturquoise;
+    display: none;
+    z-index: 3;
+}
+.submenu li a{
+    font-size: 12px;
+}
+.imgslide{
+    width: 800px;
+    height: 350px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+.imgslide a{
+    display: block;
+    position: absolute;
+    transition: all 3s;
+}
+
+.imgslide span{
+    position: absolute;
+    top: 150px;
+    left: 300px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    width: 150px;
+    height: 20px;
+    border-radius: 10px;
+    line-height: 20px;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+}
+.contents{
+    width: 800px;
+    height: 200px;
+    float: left;
+
+}
+.notice{
+    width: 300px;
+    height: 200px;
+    float: left;
+}
+.notice div a{
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    float: left;
+    border: 1px solid #ddd;
+    margin: 10px;
+}
+.notice ul{
+    width: 280px;
+    height: 150px;
+    float: left;
+    font-size: 14px;
+    line-height: 30px;
+}
+.notice ul li{
+    border-bottom: 1px solid #ddd;
+}
+.notice ul li:hover a{
+    background: #333;
+    color: #fff;
+}
+.notice ul li:hover span{
+    background: #333;
+    color: #fff;
+}
+.notice ul li span{
+    float: right;
+}
+.gallery{
+    width: 300px;
+    height: 200px;
+    float: left;
+}
+.gallery div a{
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    float: left;
+    border: 1px solid #ddd;
+    margin: 10px;
+}
+.gallery ul{
+    width: 300px;
+    height: 150px;
+    float: left;
+}
+.gallery ul li a img{
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin-left: 15px;
+}
+.gallery img:hover{
+ opacity: 0.8;
+}
+.shortcut{
+    width: 200px;
+    height: 200px;
+    float: left;
+    position: relative;
+}
+.shortcut img{
+    width: 180px;
+    height: 180px;
+    margin: 10px;
+    position: absolute;
+}
+.shortcut a span{
+    width: 80px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    position: absolute;
+    top: 90px;
+    left: 70px;
+    text-align: center;
+}
+.shortcut img:hover{
+    opacity: 0.8;
+}
+.modal{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: none;
+}
+.modal.active{
+    display: block;
+}
+.modal_up{
+    position: absolute;
+    top: 150px;
+    left: 400px;
+    width: 300px;
+    height: 230px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.title{
+    line-height: 50px;
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.content{
+    line-height: 20px;
+    text-align: center;
+}
+.btn{
+    background-color: #333;
+    color: #fff;
+    width: 50px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 240px;
+    margin-top: 10px;
+}
+footer{
+float: left;
+width: 800px;
+height: 100px;
+background:linear-gradient(to top, rgb(174, 196, 174), white);
+}
+.wrap{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.btlogo{
+    width: 200px;
+    height: 100px;
+    float: left;
+}
+.btlogo img{
+    margin: 30px 30px;
+}
+.copy{
+    width: 400px;
+    height: 100px;
+    float: left;
+}
+.copy div{
+    margin: 40px auto;
+    text-align: center;
+}
+.site{
+    width: 200px;
+    height: 100px;
+    float: right;
+}
+.site select{
+    margin: 40px 50px;
+}
